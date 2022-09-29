@@ -11,3 +11,14 @@ export const useConfirm = (message, onConfirm, onCancel) => {
     };
     return typeof onConfirm !== "function" ? undefined : confirmAction;
   };
+
+// export default function App() {
+//   const deleteWorld = () => console.log("deleting the world");
+//   const abort = () => console.log("aborted")
+//   const confirmDelete = useConfirm("Are you sure", deleteWorld, abort)
+//   return (
+//     <div className="App">
+//       <button onClick={confirmDelete}>Delete the World</button>
+//     </div>
+//   );
+// }

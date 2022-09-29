@@ -1,6 +1,5 @@
 
-import { useEffect, useState, useRef } from "react";
-import ReactDom from "react-dom";
+import { useEffect, useRef } from "react";
 
 export const useClick = (onClick) => {
     const element = useRef();
@@ -19,3 +18,13 @@ export const useClick = (onClick) => {
     }, []);
     return typeof onClick !== "function" ? undefined : element;
   };
+
+// export default function App() {
+//   const sayHello = () => console.log("say Hello");
+//   const title = useClick(sayHello);
+//   return (
+//     <div className="App">
+//       <h1 ref={title}>Hi</h1>
+//     </div>
+//   );
+// }

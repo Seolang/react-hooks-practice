@@ -14,3 +14,13 @@ export const useBeforeLeave = (onBefore) => {
     return () => document.removeEventListener("mouseleave", handle);
   }, []);
 };
+
+// export default function App() {
+//   const begForLife = () => console.log("plz don't leave");
+//   useBeforeLeave(begForLife);
+//   return (
+//     <div className="App">
+//       <h1>Hi</h1>
+//     </div>
+//   );
+// }
